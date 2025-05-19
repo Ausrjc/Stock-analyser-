@@ -28,6 +28,7 @@ def fetch_data(ticker):
 def analyze(hist):
     """Analyzes the historical stock data and predicts future prices."""
     if hist is None or hist.empty:
-        st.error("No historical data
+       st.error("No historical data available for analysis.")
+
 
 
