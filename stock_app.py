@@ -35,4 +35,4 @@ uploaded = st.file_uploader("Upload a screenshot or image with a stock ticker", 
 if uploaded:
     image = Image.open(uploaded)
     st.image(image, caption="Uploaded Image", use_column_width=True)
-    ticker =
+    ticker = extract_ticker(image)
